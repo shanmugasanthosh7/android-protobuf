@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val addressBook = createAddressBookProtobuf()
 
         // Serialize AddressBook to ByteArray
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         println(myAddressBook)
 
         println("Protobuf byte size: ${bytes.size}")
+
         println("JSON byte size: ${SAMPLE_JSON.toByteArray().size}")
     }
 
