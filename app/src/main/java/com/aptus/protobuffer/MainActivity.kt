@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
                 .setNumber("+919842012345")
                 .setType(AddressBookProtos.Person.PhoneType.HOME)
                 .build()
-
         val phoneMobile = AddressBookProtos.Person.PhoneNumber.newBuilder()
                 .setNumber("+919842012346")
                 .setType(AddressBookProtos.Person.PhoneType.MOBILE)
